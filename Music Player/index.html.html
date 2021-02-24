@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Music Player | JavaScript</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            height: 90vh;
+            width: 86%;
+            /* border: 2px solid black; */
+            /* background-color: aquamarine; */
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .card {
+            cursor: pointer;
+            /* border: 1px solid tomato; */
+            height: 214px;
+            width: 354px
+        }
+
+
+        h1 {
+            display: block;
+            text-align: center;
+            font-family: monospace;
+            padding-bottom: 20px;
+        }
+
+        img {
+            height: inherit;
+            width: inherit;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Javascript Music Player</h1>
+    <hr>
+    <main>
+        <div class="container">
+            <div class="card" onclick="play()" ondblclick="pause()"><img src="1.png" alt="This is a Picture"></div>
+
+            <div class="card" onclick="play1()" ondblclick="pause1()"><img src="2.jpg" alt="This is a Picture"></div>
+
+            <div class="card" onclick="play2()" ondblclick="pause2()"><img src="3.png" alt="This is a Picture"></div>
+
+            <div class="card" onclick="play3()" ondblclick="pause3()"><img src="4.jpg" alt="This is a Picture"></div>
+
+            <div class="card" onclick="play()" ondblclick="pause()"><img src="5.jpg" alt="This is a Picture"></div>
+
+            <div class="card" onclick="play1()" ondblclick="pause1()"><img src="6.png" alt="This is a Picture"></div>
+
+            <div class="card" onclick="play2()" ondblclick="pause2()"><img src="7.jpg" alt="This is a Picture"></div>
+
+            <div class="card" onclick="play3()" ondblclick="pause3()"><img src="8.jpg" alt="This is a Picture"></div>
+
+            <div class="card" onclick="play()" ondblclick="pause()"><img src="9.jpg" alt="This is a Picture"></div>
+        </div>
+    </main>
+
+    <script>
+        const song0 = new Audio('1.mp3');
+        const song1 = new Audio('2.mp3');
+        const song2 = new Audio('3.mp3');
+        const song3 = new Audio('4.mp3');
+
+
+        const play = () => {
+            song0.play();
+        }
+
+        const pause = () => {
+            song0.pause();
+        }
+
+        const play1 = () => {
+            song1.play()
+        }
+        const pause1 = () => {
+            song1.pause()
+        }
+        const play2 = () => {
+            song2.play()
+        }
+        const pause2 = () => {
+            song2.pause()
+        }
+        const play3 = () => {
+            song3.play()
+        }
+        const pause3 = () => {
+            song3.pause()
+        }
+
+    // let card = document.getElementsByClassName('card');
+
+
+    </script>
+</body>
+
+</html>
